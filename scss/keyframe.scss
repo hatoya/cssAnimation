@@ -1,14 +1,29 @@
-@-webkit-keyframes animate1{
-	0%{
+@-webkit-keyframes animate1 {
+	0% {
 		@include animatePos(0, 0, 20, 20);
 	}
-	10%{
+	10% {
 		@include animatePos(5, -2.5, 15, 25);
 	}
-	17%{
+	17% {
 		@include animatePos(0, 0, 20, 20);
 	}
-	66%{
+	66% {
 		@include animatePos(-23, 2, 24, 16);
+	}
+}
+
+@-webkit-keyframes animate2 {
+	0%{
+		top: 20px;
+		height: 10px;
+	}
+	30%{
+		top: 0px;
+		height: 50px;
+	}
+	60%{
+		top: 20px;
+		height: 10px;
 	}
 }

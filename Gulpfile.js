@@ -25,7 +25,7 @@ gulp.task('ts', function(){
 });
 
 gulp.task('watch', function(){
-	gulp.watch('./scss/style.scss', ['sass']);
+	gulp.watch('./scss/*.scss', ['sass']);
 	gulp.watch('./ts/*.ts', ['ts']);
 	gulp.watch(['./app/*.html', './app/css/style.css', './app/js/*.js'], function(){
 		gulp.src('app/*.html').pipe(connect.reload());
