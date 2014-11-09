@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	connect = require('gulp-connect'),
 	sass = require('gulp-ruby-sass'),
+	plumber = require('gulp-plumber'),
 	ts = require('gulp-typescript');
 
 gulp.task('connect', function(){
@@ -14,6 +15,7 @@ gulp.task('connect', function(){
 gulp.task('sass', function(){
 	gulp
 		.src('./scss/style.scss')
+		.pipe(plumber())
 		.pipe(sass({style: 'expanded'}))
 		.pipe(gulp.dest('./app/css'));
 });
