@@ -35,3 +35,20 @@ ul{
 		-webkit-animation: animate1 .85s ease infinite;
 	}
 }
+
+.loading2{
+	width: 70px;
+	margin: 50px auto;
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	div{
+		height: 50px;
+		width: 5px;
+		margin-left: 2px;
+		background: nth($color, 2);
+		float: left;
+	}
+}

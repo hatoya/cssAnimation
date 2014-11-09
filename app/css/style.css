@@ -57,4 +57,21 @@ ul {
   -webkit-animation: animate1 .85s ease infinite;
 }
 
+.loading2 {
+  width: 70px;
+  margin: 50px auto;
+}
+.loading2:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.loading2 div {
+  height: 50px;
+  width: 5px;
+  margin-left: 2px;
+  background: #8bc626;
+  float: left;
+}
+
 /*# sourceMappingURL=style.css.map */
