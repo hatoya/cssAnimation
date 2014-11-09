@@ -37,6 +37,7 @@ ul{
 }
 
 .loading2{
+	position: relative;
 	width: 70px;
 	margin: 50px auto;
 	&:after{
@@ -45,10 +46,19 @@ ul{
 		clear: both;
 	}
 	div{
-		height: 50px;
+		position: absolute;
+		top: 20px;
+		height: 10px;
 		width: 5px;
 		margin-left: 2px;
 		background: nth($color, 2);
 		float: left;
+		-webkit-animation: animate2 1s infinite;
+	}
+	@for $i from 0 through 9{
+		div:nth-child(#{$i+1}){
+			left: $i * 7px;
+			-webkit-animation-delay: $i * .25s;
+		}
 	}
 }
