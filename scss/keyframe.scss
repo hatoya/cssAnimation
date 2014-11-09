@@ -27,3 +27,14 @@
 		height: 10px;
 	}
 }
+
+@-webkit-keyframes animate3{
+	50%{
+		border-radius: 50%;
+		-webkit-transform: rotate(90deg);
+	}
+	100%{
+		border-radius: 0;
+		-webkit-transform: rotate(180deg);
+	}
+}
