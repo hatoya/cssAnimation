@@ -1,0 +1,37 @@
+@import "mixin";
+@import "keyframe";
+
+$color: #e68616, #8bc626, #54dcac, #f77167;
+
+body{
+	background: #eee;
+	margin: 0;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.content{
+	width: 1024px;
+	min-height: 500px;
+	margin: 100px auto;
+}
+
+.loading1{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	div{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 20px;
+		width: 20px;
+		background: nth($color, 1);
+		border-radius: 50%;
+		-webkit-animation: animate1 .85s ease infinite;
+	}
+}
