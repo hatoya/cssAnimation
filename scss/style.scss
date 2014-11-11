@@ -1,7 +1,7 @@
 @import "mixin";
 @import "keyframe";
 
-$color: #e68616, #8bc626, #45B4D9, #f77167;
+$color: #e68616, #8bc626, #45B4D9, #f77167, #EDCC6D;
 
 body{
     background: #eee;
@@ -78,7 +78,7 @@ ul{
     position: relative;
     height: 20px;
     width: 20px;
-    margin: 80px auto;
+    margin: 80px auto 0 auto;
     div{
         position: absolute;
         top: 0;
@@ -166,7 +166,33 @@ ul{
 }
 
 .loading5{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 40px auto 0 auto;
     div{
-        
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        height: 20px;
+        width: 20px;
+        -webkit-animation: animate5 1s linear infinite;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 10px;
+            border-radius: 50%;
+            background: nth($color, 5);
+        }
+    }
+    @for $i from 0 through 7{
+        div:nth-child(#{$i+1}){
+            -webkit-animation-delay: $i * .08s;
+            &:after{
+                height: (8 - $i) * .6px;
+                width: (8 - $i) * .6px;
+            }
+        }
     }
 }
