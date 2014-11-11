@@ -90,9 +90,9 @@ ul {
 }
 
 .content {
-  width: 1024px;
+  width: 320px;
   min-height: 500px;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 .content > div {
   position: relative;
@@ -127,45 +127,44 @@ ul {
   float: left;
   -webkit-animation: animate2 1s infinite;
 }
+.loading2 div:nth-child(4n+2) {
+  -webkit-animation-delay: .25s;
+}
+.loading2 div:nth-child(4n+3) {
+  -webkit-animation-delay: .5s;
+}
+.loading2 div:nth-child(4n+4) {
+  -webkit-animation-delay: .75s;
+}
 .loading2 div:nth-child(1) {
   left: -10px;
-  -webkit-animation-delay: 0s;
 }
 .loading2 div:nth-child(2) {
   left: -3px;
-  -webkit-animation-delay: 0.25s;
 }
 .loading2 div:nth-child(3) {
   left: 4px;
-  -webkit-animation-delay: 0.5s;
 }
 .loading2 div:nth-child(4) {
   left: 11px;
-  -webkit-animation-delay: 0.75s;
 }
 .loading2 div:nth-child(5) {
   left: 18px;
-  -webkit-animation-delay: 1s;
 }
 .loading2 div:nth-child(6) {
   left: 25px;
-  -webkit-animation-delay: 1.25s;
 }
 .loading2 div:nth-child(7) {
   left: 32px;
-  -webkit-animation-delay: 1.5s;
 }
 .loading2 div:nth-child(8) {
   left: 39px;
-  -webkit-animation-delay: 1.75s;
 }
 .loading2 div:nth-child(9) {
   left: 46px;
-  -webkit-animation-delay: 2s;
 }
 .loading2 div:nth-child(10) {
   left: 53px;
-  -webkit-animation-delay: 2.25s;
 }
 
 .loading3 div {
