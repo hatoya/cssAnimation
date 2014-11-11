@@ -53,3 +53,9 @@
 		@include animatePos(-23, 2, 20, 20);
 	}
 }
+
+@-webkit-keyframes animate5{
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}

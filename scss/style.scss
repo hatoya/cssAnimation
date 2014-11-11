@@ -1,166 +1,198 @@
 @import "mixin";
 @import "keyframe";
 
-$color: #e68616, #8bc626, #45B4D9, #f77167;
+$color: #e68616, #8bc626, #45B4D9, #f77167, #EDCC6D;
 
 body{
-	background: #eee;
-	margin: 0;
+    background: #eee;
+    margin: 0;
 }
 
 ul{
-	list-style-type: none;
-	padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .content{
-	width: 1024px;
-	min-height: 500px;
-	margin: 100px auto;
+    width: 1024px;
+    min-height: 500px;
+    margin: 100px auto;
 }
 
 .loading1{
-	position: relative;
-	width: 20px;
-	height: 20px;
-	margin: 0 auto;
-	div{
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 20px;
-		width: 20px;
-		background: nth($color, 1);
-		border-radius: 50%;
-		-webkit-animation: animate1 .85s infinite;
-	}
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background: nth($color, 1);
+        border-radius: 50%;
+        -webkit-animation: animate1 .85s infinite;
+    }
 }
 
 .loading2{
-	position: relative;
-	width: 70px;
-	height: 50px;
-	margin: 50px auto;
-	&:after{
-		content: "";
-		display: block;
-		clear: both;
-	}
-	div{
-		position: absolute;
-		top: 25px;
-		height: 5px;
-		width: 5px;
-		margin-left: 2px;
-		background: nth($color, 2);
-		float: left;
-		-webkit-animation: animate2 1s infinite;
-	}
-	@for $i from 0 through 9{
-		div:nth-child(#{$i+1}){
-			left: $i * 7px;
-			-webkit-animation-delay: $i * .25s;
-		}
-	}
+    position: relative;
+    width: 70px;
+    height: 50px;
+    margin: 50px auto;
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    div{
+        position: absolute;
+        top: 25px;
+        height: 5px;
+        width: 5px;
+        margin-left: 2px;
+        background: nth($color, 2);
+        float: left;
+        -webkit-animation: animate2 1s infinite;
+    }
+    @for $i from 0 through 9{
+        div:nth-child(#{$i+1}){
+            left: $i * 7px;
+            -webkit-animation-delay: $i * .25s;
+        }
+    }
 }
 
 .loading3{
-	div{
-		width: 20px;
-		height: 20px;
-		margin: 0 auto;
-		background: nth($color, 4);
-		-webkit-animation: animate3 1s infinite;
-	}
+    div{
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        background: nth($color, 4);
+        -webkit-animation: animate3 1s infinite;
+    }
 }
 
 .loading4{
-	position: relative;
-	height: 20px;
-	width: 20px;
-	margin: 80px auto;
-	div{
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 15px;
-		width: 20px;
-		border-radius: 50%;
-		background: nth($color, 3);
-		-webkit-animation: animate4 .85s infinite;
-		&:after{
-			content: "";
-			position: absolute;
-			top: -2px;
-			left: 5px;
-			width: 10px; 
-			height: 10px;
-			-webkit-transform: rotate(45deg);
-			background: nth($color, 3);
-		}
-	}
-	span:nth-child(1){
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 5;
-		&:before{
-			content: "";
-			position: absolute;
-			top: 3px;
-			left: 3px;
-			height: 5px;
-			width: 5px;
-			line-height: 0;
-			border-radius: 50%;
-			background: #eee;
-		}
-		&:after{
-			content: "";
-			position: absolute;
-			top: 3px;
-			left: 11px;
-			height: 5px;
-			width: 5px;
-			line-height: 0;
-			border-radius: 50%;
-			background: #eee;
-		}
-	}
-	span:nth-child(2){
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 5;
-		&:before{
-			content: "";
-			position: absolute;
-			top: 4px;
-			left: 4px;
-			height: 3px;
-			width: 3px;
-			line-height: 0;
-			border-radius: 50%;
-			background: #000;
-		}
-		&:after{
-			content: "";
-			position: absolute;
-			top: 4px;
-			left: 12px;
-			height: 3px;
-			width: 3px;
-			line-height: 0;
-			border-radius: 50%;
-			background: #000;
-		}
-	}
-	span:nth-child(3){
-		position: absolute;
-		top: 2px;
-		left: 7px;
-		color: red;
-		font-size: 13px;
-		-webkit-transform: rotate(90deg);
-	}
+    position: relative;
+    height: 20px;
+    width: 20px;
+    margin: 80px auto 0 auto;
+    div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 20px;
+        border-radius: 50%;
+        background: nth($color, 3);
+        -webkit-animation: animate4 .85s infinite;
+        &:after{
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: 5px;
+            width: 10px; 
+            height: 10px;
+            -webkit-transform: rotate(45deg);
+            background: nth($color, 3);
+        }
+    }
+    span:nth-child(1){
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            height: 5px;
+            width: 5px;
+            line-height: 0;
+            border-radius: 50%;
+            background: #eee;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 11px;
+            height: 5px;
+            width: 5px;
+            line-height: 0;
+            border-radius: 50%;
+            background: #eee;
+        }
+    }
+    span:nth-child(2){
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            height: 3px;
+            width: 3px;
+            line-height: 0;
+            border-radius: 50%;
+            background: #000;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 12px;
+            height: 3px;
+            width: 3px;
+            line-height: 0;
+            border-radius: 50%;
+            background: #000;
+        }
+    }
+    span:nth-child(3){
+        position: absolute;
+        top: 2px;
+        left: 7px;
+        color: red;
+        font-size: 13px;
+        -webkit-transform: rotate(90deg);
+    }
+}
+
+.loading5{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 40px auto 0 auto;
+    div{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        height: 20px;
+        width: 20px;
+        -webkit-animation: animate5 1s linear infinite;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 10px;
+            border-radius: 50%;
+            background: nth($color, 5);
+        }
+    }
+    @for $i from 0 through 7{
+        div:nth-child(#{$i+1}){
+            -webkit-animation-delay: $i * .08s;
+            &:after{
+                height: (8 - $i) * .6px;
+                width: (8 - $i) * .6px;
+            }
+        }
+    }
 }
