@@ -1,25 +1,25 @@
 @-webkit-keyframes animate1 {
   0% {
-    top: 0px;
-    left: 0px;
+    top: 30px;
+    left: 15px;
     width: 20px;
     height: 20px;
   }
   10% {
-    top: 5px;
-    left: -2.5px;
+    top: 35px;
+    left: 12.5px;
     width: 25px;
     height: 15px;
   }
   17% {
-    top: 0px;
-    left: 0px;
+    top: 30px;
+    left: 15px;
     width: 20px;
     height: 20px;
   }
   66% {
-    top: -23px;
-    left: 2px;
+    top: 7px;
+    left: 17px;
     width: 16px;
     height: 24px;
   }
@@ -50,26 +50,26 @@
 }
 @-webkit-keyframes animate4 {
   0% {
-    top: 0px;
-    left: 0px;
+    top: 30px;
+    left: 15px;
     width: 20px;
     height: 15px;
   }
   10% {
-    top: 5px;
-    left: 0px;
+    top: 35px;
+    left: 15px;
     width: 20px;
     height: 14px;
   }
   17% {
-    top: 0px;
-    left: 0px;
+    top: 30px;
+    left: 15px;
     width: 20px;
     height: 15px;
   }
   66% {
-    top: -23px;
-    left: 2px;
+    top: 7px;
+    left: 17px;
     width: 20px;
     height: 20px;
   }
@@ -94,17 +94,17 @@ ul {
   min-height: 500px;
   margin: 100px auto;
 }
-
-.loading1 {
+.content > div {
   position: relative;
-  width: 20px;
-  height: 20px;
-  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  margin: 20px auto 0 auto;
 }
+
 .loading1 div {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 15px;
   height: 20px;
   width: 20px;
   background: #e68616;
@@ -112,12 +112,6 @@ ul {
   -webkit-animation: animate1 .85s infinite;
 }
 
-.loading2 {
-  position: relative;
-  width: 70px;
-  height: 50px;
-  margin: 50px auto;
-}
 .loading2:after {
   content: "";
   display: block;
@@ -134,64 +128,60 @@ ul {
   -webkit-animation: animate2 1s infinite;
 }
 .loading2 div:nth-child(1) {
-  left: 0px;
+  left: -10px;
   -webkit-animation-delay: 0s;
 }
 .loading2 div:nth-child(2) {
-  left: 7px;
+  left: -3px;
   -webkit-animation-delay: 0.25s;
 }
 .loading2 div:nth-child(3) {
-  left: 14px;
+  left: 4px;
   -webkit-animation-delay: 0.5s;
 }
 .loading2 div:nth-child(4) {
-  left: 21px;
+  left: 11px;
   -webkit-animation-delay: 0.75s;
 }
 .loading2 div:nth-child(5) {
-  left: 28px;
+  left: 18px;
   -webkit-animation-delay: 1s;
 }
 .loading2 div:nth-child(6) {
-  left: 35px;
+  left: 25px;
   -webkit-animation-delay: 1.25s;
 }
 .loading2 div:nth-child(7) {
-  left: 42px;
+  left: 32px;
   -webkit-animation-delay: 1.5s;
 }
 .loading2 div:nth-child(8) {
-  left: 49px;
+  left: 39px;
   -webkit-animation-delay: 1.75s;
 }
 .loading2 div:nth-child(9) {
-  left: 56px;
+  left: 46px;
   -webkit-animation-delay: 2s;
 }
 .loading2 div:nth-child(10) {
-  left: 63px;
+  left: 53px;
   -webkit-animation-delay: 2.25s;
 }
 
 .loading3 div {
+  position: absolute;
+  top: 15px;
+  left: 15px;
   width: 20px;
   height: 20px;
-  margin: 0 auto;
   background: #f77167;
   -webkit-animation: animate3 1s infinite;
 }
 
-.loading4 {
-  position: relative;
-  height: 20px;
-  width: 20px;
-  margin: 80px auto 0 auto;
-}
 .loading4 div {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 15px;
   height: 15px;
   width: 20px;
   border-radius: 50%;
@@ -273,12 +263,6 @@ ul {
   -webkit-transform: rotate(90deg);
 }
 
-.loading5 {
-  position: relative;
-  height: 50px;
-  width: 50px;
-  margin: 40px auto 0 auto;
-}
 .loading5 div {
   position: absolute;
   top: 15px;

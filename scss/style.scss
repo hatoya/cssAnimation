@@ -17,17 +17,19 @@ ul{
     width: 1024px;
     min-height: 500px;
     margin: 100px auto;
+    & > div{
+        position: relative;
+        height: 50px;
+        width: 50px;
+        margin: 20px auto 0 auto;
+    }
 }
 
 .loading1{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    margin: 0 auto;
     div{
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 30px;
+        left: 15px;
         height: 20px;
         width: 20px;
         background: nth($color, 1);
@@ -37,10 +39,6 @@ ul{
 }
 
 .loading2{
-    position: relative;
-    width: 70px;
-    height: 50px;
-    margin: 50px auto;
     &:after{
         content: "";
         display: block;
@@ -58,7 +56,7 @@ ul{
     }
     @for $i from 0 through 9{
         div:nth-child(#{$i+1}){
-            left: $i * 7px;
+            left: ($i * 7) - 10px;
             -webkit-animation-delay: $i * .25s;
         }
     }
@@ -66,23 +64,21 @@ ul{
 
 .loading3{
     div{
+        position: absolute;
+        top: 15px;
+        left: 15px;
         width: 20px;
         height: 20px;
-        margin: 0 auto;
         background: nth($color, 4);
         -webkit-animation: animate3 1s infinite;
     }
 }
 
 .loading4{
-    position: relative;
-    height: 20px;
-    width: 20px;
-    margin: 80px auto 0 auto;
     div{
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 30px;
+        left: 15px;
         height: 15px;
         width: 20px;
         border-radius: 50%;
@@ -166,10 +162,6 @@ ul{
 }
 
 .loading5{
-    position: relative;
-    height: 50px;
-    width: 50px;
-    margin: 40px auto 0 auto;
     div{
         position: absolute;
         top: 15px;
