@@ -1,7 +1,7 @@
 @import "mixin";
 @import "keyframe";
 
-$color: #e68616, #8bc626, #45B4D9, #f77167, #EDCC6D;
+$color: #e68616, #8bc626, #45B4D9, #f77167, #EDCC6D, #DC73FB;
 
 body{
     background: #eee;
@@ -199,5 +199,11 @@ ul{
 }
 
 .loading6 {
-    
+    div {
+        @include positionType(absolute, 15px, 15px);
+        height: 20px;
+        width: 20px;
+        background: nth($color, 6);
+        -webkit-animation: animate6 1s linear infinite;
+    }
 }

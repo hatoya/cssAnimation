@@ -1,61 +1,83 @@
 @-webkit-keyframes animate1 {
-	0% {
-		@include animatePos(30, 15, 20, 20);
-	}
-	10% {
-		@include animatePos(35, 12.5, 15, 25);
-	}
-	17% {
-		@include animatePos(30, 15, 20, 20);
-	}
-	66% {
-		@include animatePos(7, 17, 24, 16);
-	}
+    0% {
+        @include animatePos(30, 15, 20, 20);
+    }
+    10% {
+        @include animatePos(35, 12.5, 15, 25);
+    }
+    17% {
+        @include animatePos(30, 15, 20, 20);
+    }
+    66% {
+        @include animatePos(7, 17, 24, 16);
+    }
 }
 
 @-webkit-keyframes animate2 {
-	0%{
-		top: 25px;
-		height: 5px;
-	}
-	30%{
-		top: 0px;
-		height: 50px;
-	}
-	60%{
-		top: 25px;
-		height: 5px;
-	}
+    0% {
+        top: 25px;
+        height: 5px;
+    }
+    30% {
+        top: 0px;
+        height: 50px;
+    }
+    60% {
+        top: 25px;
+        height: 5px;
+    }
 }
 
-@-webkit-keyframes animate3{
-	50%{
-		border-radius: 50%;
-		-webkit-transform: rotate(90deg);
-	}
-	100%{
-		border-radius: 0;
-		-webkit-transform: rotate(180deg);
-	}
+@-webkit-keyframes animate3 {
+    50% {
+        border-radius: 50%;
+        -webkit-transform: rotate(90deg);
+    }
+    100% {
+        border-radius: 0;
+        -webkit-transform: rotate(180deg);
+    }
 }
 
-@-webkit-keyframes animate4{
-	0% {
-		@include animatePos(30, 15, 15, 20);
-	}
-	10% {
-		@include animatePos(35, 15, 14, 20);
-	}
-	17% {
-		@include animatePos(30, 15, 15, 20);
-	}
-	66% {
-		@include animatePos(7, 17, 20, 20);
-	}
+@-webkit-keyframes animate4 {
+    0% {
+        @include animatePos(30, 15, 15, 20);
+    }
+    10% {
+        @include animatePos(35, 15, 14, 20);
+    }
+    17% {
+        @include animatePos(30, 15, 15, 20);
+    }
+    66% {
+        @include animatePos(7, 17, 20, 20);
+    }
 }
 
-@-webkit-keyframes animate5{
-	100%{
-		-webkit-transform: rotate(360deg);
-	}
+@-webkit-keyframes animate5 {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes animate6 {
+    25% {
+        @include animatePos(21, 12, 14, 26);
+    }
+    50% {
+        @include animatePos(15, 15, 20, 20);
+    }
+    62.5% {
+        -webkit-transform: rotate(0);
+    }
+    75% {
+        @include animatePos(5, 15, 20, 20);
+    }
+    87.5% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        @include animatePos(15, 15, 20, 20);
+        -webkit-transform: rotate(180deg);
+    }
 }

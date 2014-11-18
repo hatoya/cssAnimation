@@ -1,6 +1,12 @@
-@mixin animatePos($top, $left, $height, $width){
+@mixin animatePos($top, $left, $height, $width) {
 	top: $top + px;
 	left: $left + px;
 	width: $width + px;
 	height: $height + px;
+}
+
+@mixin positionType($position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
 }
