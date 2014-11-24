@@ -203,11 +203,34 @@ ul{
         @include positionType(absolute, 15px, 15px);
         height: 20px;
         width: 20px;
-        background: nth($color, 6);
+        background: nth($color, 4);
         -webkit-animation: animate6 1s linear infinite;
     }
 }
 
 .loading7 {
-    
+    div {
+        @include positionType(absolute, 0, 0);
+        height: 50px;
+        width: 50px;
+        &:after {
+            content: "";
+            @include positionType(absolute, 0px, 19px);
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            background: nth($color, 1);
+            -webkit-animation: animate7 1s linear infinite;
+        }
+        &:nth-child(2n) {
+            &:after {
+                -webkit-animation-delay: .5s;
+            }
+        }
+    }
+    @for $i from 0 through 3 {
+        div:nth-child(#{$i+1}) {
+            -webkit-transform: rotate(#{$i * 90deg + 45deg});
+        }
+    }
 }
