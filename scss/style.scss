@@ -184,7 +184,7 @@ ul{
             top: 0;
             left: 10px;
             border-radius: 50%;
-            background: nth($color, 5);
+            background: nth($color, 1);
         }
     }
     @for $i from 0 through 7{
@@ -236,5 +236,27 @@ ul{
 }
 
 .loading8 {
-    
+    div {
+        @include positionType(absolute, 0, 0);
+        height: 50px;
+        width: 50px;
+        &:after {
+            content: "";
+            @include positionType(absolute, 5px, 19px);
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            background: nth($color, 1);
+            -webkit-transform: scale(.5);
+            -webkit-animation: animate8 2.4s linear infinite;
+        }
+    }
+    @for $i from 0 through 7 {
+        div:nth-child(#{$i+1}) {
+            -webkit-transform: rotate(#{$i * 45deg});
+            &:after {
+                -webkit-animation-delay: #{$i * .3s};
+            }
+        }
+    }
 }
