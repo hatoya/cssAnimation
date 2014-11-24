@@ -1,7 +1,4 @@
 @-webkit-keyframes animate1 {
-    0% {
-        @include animatePos(30, 15, 20, 20);
-    }
     10% {
         @include animatePos(35, 12.5, 15, 25);
     }
@@ -79,5 +76,17 @@
     100% {
         @include animatePos(15, 15, 20, 20);
         -webkit-transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes animate7 {
+    40% {
+        @include animatePos(14, 19, 12, 12);
+    }
+    50% {
+        @include animatePos(18, 17, 8, 16);
+    }
+    60% {
+        @include animatePos(14, 19, 12, 12);
     }
 }
