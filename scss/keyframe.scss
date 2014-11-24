@@ -90,3 +90,12 @@
         @include animatePos(14, 19, 12, 12);
     }
 }
+
+@-webkit-keyframes animate8 {
+    10% {
+        -webkit-transform: scale(1);
+    }
+    20% {
+        -webkit-transform: scale(.5);
+    }
+}
