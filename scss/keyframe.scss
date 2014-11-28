@@ -1,4 +1,4 @@
-@-webkit-keyframes animate1 {
+@keyframes animate1 {
     10% {
         @include animatePos(35, 12.5, 15, 25);
     }
@@ -10,7 +10,7 @@
     }
 }
 
-@-webkit-keyframes animate2 {
+@keyframes animate2 {
     0% {
         top: 25px;
         height: 5px;
@@ -25,18 +25,18 @@
     }
 }
 
-@-webkit-keyframes animate3 {
+@keyframes animate3 {
     50% {
         border-radius: 50%;
-        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
     100% {
         border-radius: 0;
-        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 }
 
-@-webkit-keyframes animate4 {
+@keyframes animate4 {
     0% {
         @include animatePos(30, 15, 15, 20);
     }
@@ -51,13 +51,13 @@
     }
 }
 
-@-webkit-keyframes animate5 {
+@keyframes animate5 {
     100% {
-        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
-@-webkit-keyframes animate6 {
+@keyframes animate6 {
     25% {
         @include animatePos(21, 12, 14, 26);
     }
@@ -65,21 +65,21 @@
         @include animatePos(15, 15, 20, 20);
     }
     62.5% {
-        -webkit-transform: rotate(0);
+        transform: rotate(0);
     }
     75% {
         @include animatePos(5, 15, 20, 20);
     }
     87.5% {
-        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
     100% {
         @include animatePos(15, 15, 20, 20);
-        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 }
 
-@-webkit-keyframes animate7 {
+@keyframes animate7 {
     40% {
         @include animatePos(14, 19, 12, 12);
     }
@@ -91,16 +91,16 @@
     }
 }
 
-@-webkit-keyframes animate8 {
+@keyframes animate8 {
     10% {
-        -webkit-transform: scale(1);
+        transform: scale(1);
     }
     20% {
-        -webkit-transform: scale(.5);
+        transform: scale(.5);
     }
 }
 
-@-webkit-keyframes animate9 {
+@keyframes animate9 {
     60% {
         opacity: 0;
     }

@@ -34,7 +34,7 @@ ul{
         width: 20px;
         background: nth($color, 1);
         border-radius: 50%;
-        -webkit-animation: animate1 .85s infinite;
+        animation: animate1 .85s infinite;
     }
 }
 
@@ -52,15 +52,15 @@ ul{
         margin-left: 2px;
         background: nth($color, 2);
         float: left;
-        -webkit-animation: animate2 1s infinite;
+        animation: animate2 1s infinite;
         &:nth-child(4n+2){
-            -webkit-animation-delay: .25s;
+            animation-delay: .25s;
         }
         &:nth-child(4n+3){
-            -webkit-animation-delay: .5s;
+            animation-delay: .5s;
         }
         &:nth-child(4n+4){
-            -webkit-animation-delay: .75s;
+            animation-delay: .75s;
         }
 
     }
@@ -79,7 +79,7 @@ ul{
         width: 20px;
         height: 20px;
         background: nth($color, 4);
-        -webkit-animation: animate3 1s infinite;
+        animation: animate3 1s infinite;
     }
 }
 
@@ -92,7 +92,7 @@ ul{
         width: 20px;
         border-radius: 50%;
         background: nth($color, 3);
-        -webkit-animation: animate4 .85s infinite;
+        animation: animate4 .85s infinite;
         &:after{
             content: "";
             position: absolute;
@@ -100,7 +100,7 @@ ul{
             left: 5px;
             width: 10px; 
             height: 10px;
-            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
             background: nth($color, 3);
         }
     }
@@ -166,7 +166,7 @@ ul{
         left: 8px;
         color: red;
         font-size: 13px;
-        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
 }
 
@@ -177,7 +177,7 @@ ul{
         left: 15px;
         height: 20px;
         width: 20px;
-        -webkit-animation: animate5 1s linear infinite;
+        animation: animate5 1s linear infinite;
         &:after{
             content: "";
             position: absolute;
@@ -189,7 +189,7 @@ ul{
     }
     @for $i from 0 through 7{
         div:nth-child(#{$i+1}){
-            -webkit-animation-delay: $i * .08s;
+            animation-delay: $i * .08s;
             &:after{
                 height: (8 - $i) * .6px;
                 width: (8 - $i) * .6px;
@@ -204,7 +204,7 @@ ul{
         height: 20px;
         width: 20px;
         background: nth($color, 4);
-        -webkit-animation: animate6 1s linear infinite;
+        animation: animate6 1s linear infinite;
     }
 }
 
@@ -220,17 +220,17 @@ ul{
             width: 12px;
             border-radius: 50%;
             background: nth($color, 1);
-            -webkit-animation: animate7 1s linear infinite;
+            animation: animate7 1s linear infinite;
         }
         &:nth-child(2n) {
             &:after {
-                -webkit-animation-delay: .5s;
+                animation-delay: .5s;
             }
         }
     }
     @for $i from 0 through 3 {
         div:nth-child(#{$i+1}) {
-            -webkit-transform: rotate(#{$i * 90deg + 45deg});
+            transform: rotate(#{$i * 90deg + 45deg});
         }
     }
 }
@@ -247,15 +247,15 @@ ul{
             width: 12px;
             border-radius: 50%;
             background: nth($color, 2);
-            -webkit-transform: scale(.5);
-            -webkit-animation: animate8 2.4s linear infinite;
+            transform: scale(.5);
+            animation: animate8 2.4s linear infinite;
         }
     }
     @for $i from 0 through 7 {
         div:nth-child(#{$i+1}) {
-            -webkit-transform: rotate(#{$i * 45deg});
+            transform: rotate(#{$i * 45deg});
             &:after {
-                -webkit-animation-delay: #{$i * .3s};
+                animation-delay: #{$i * .3s};
             }
         }
     }
@@ -268,10 +268,10 @@ ul{
         width: 0;
         border-radius: 50%;
         border: 2px solid nth($color, 3);
-        -webkit-animation: animate9 1.8s linear infinite;
+        animation: animate9 1.8s linear infinite;
         @for $i from 0 through 2 {
             &:nth-child(#{$i+1}) {
-                -webkit-animation-delay: #{$i * .3s};
+                animation-delay: #{$i * .3s};
             }
         }
     }
