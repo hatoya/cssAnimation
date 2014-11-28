@@ -15,7 +15,7 @@ ul{
 
 .content{
     width: 320px;
-    min-height: 500px;
+    min-height: 800px;
     margin: 50px auto;
     & > div{
         position: relative;
@@ -262,5 +262,17 @@ ul{
 }
 
 .loading9 {
-    
+    div {
+        @include positionType(absolute, 24px, 24px);
+        height: 0;
+        width: 0;
+        border-radius: 50%;
+        border: 2px solid nth($color, 3);
+        -webkit-animation: animate9 1.8s linear infinite;
+        @for $i from 0 through 2 {
+            &:nth-child(#{$i+1}) {
+                -webkit-animation-delay: #{$i * .3s};
+            }
+        }
+    }
 }
