@@ -276,3 +276,25 @@ ul{
         }
     }
 }
+
+.loading10 {
+    & > div {
+        height: 50px;
+        width: 50px;
+        animation: animate10 5s linear infinite;
+        div {
+            @include positionType(absolute, 10px, 21px);
+            height: 15px;
+            width: 8px;
+            background: nth($color, 4);
+            border-radius: 50%;
+            opacity: .5;
+            @for $i from 0 through 7 {
+                &:nth-child(#{$i+1}) {
+                    transform: rotate($i * 45deg);
+                    transform-origin: bottom center;
+                }
+            }
+        }
+    }
+}
