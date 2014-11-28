@@ -99,3 +99,13 @@
         -webkit-transform: scale(.5);
     }
 }
+
+@-webkit-keyframes animate9 {
+    60% {
+        opacity: 0;
+    }
+    100% {
+        @include animatePos(-26, -26, 100, 100);
+        opacity: 0;
+    }
+}
