@@ -109,3 +109,9 @@
         opacity: 0;
     }
 }
+
+@keyframes animate10 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
