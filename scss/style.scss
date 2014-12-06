@@ -300,5 +300,28 @@ ul{
 }
 
 .loading11 {
-    
+    & > div {
+        height: 50px;
+        width: 50px;
+        animation: animate111 1.5s linear infinite;
+        div {
+            @include positionType(absolute, 0, 0);
+            height: 50px;
+            width: 50px;
+            &:after {
+                content: "";
+                @include positionType(absolute, 7px, 19px);
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+                background: nth($color, 1);
+                animation: animate11 1.5s linear infinite;
+            }
+            @for $i from 0 through 3 {
+                &:nth-child(#{$i+1}) {
+                    transform: rotate(#{$i * 90deg});
+                }
+            }
+        }
+    }
 }
