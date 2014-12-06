@@ -115,3 +115,15 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes animate111 {
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes animate11 {
+    50% {
+        transform: scale(.2);
+    }
+}
