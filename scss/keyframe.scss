@@ -1,12 +1,12 @@
 @keyframes animate1 {
-    10% {
-        @include animatePos(35, 12.5, 15, 25);
+    20% {
+        @include animatePos(35, 12, 15, 26);
     }
-    17% {
+    40% {
         @include animatePos(30, 15, 20, 20);
     }
-    66% {
-        @include animatePos(7, 17, 24, 16);
+    80% {
+        @include animatePos(7, 16, 24, 18);
     }
 }
 

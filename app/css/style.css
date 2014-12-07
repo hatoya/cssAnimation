@@ -1,20 +1,20 @@
 @keyframes animate1 {
-  10% {
+  20% {
     top: 35px;
-    left: 12.5px;
-    width: 25px;
+    left: 12px;
+    width: 26px;
     height: 15px;
   }
-  17% {
+  40% {
     top: 30px;
     left: 15px;
     width: 20px;
     height: 20px;
   }
-  66% {
+  80% {
     top: 7px;
-    left: 17px;
-    width: 16px;
+    left: 16px;
+    width: 18px;
     height: 24px;
   }
 }
@@ -191,7 +191,7 @@ ul {
   width: 20px;
   background: #e68616;
   border-radius: 50%;
-  animation: animate1 .85s infinite;
+  animation: animate1 .8s infinite;
 }
 
 .loading2:after {
