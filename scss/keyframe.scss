@@ -36,27 +36,6 @@
     }
 }
 
-@keyframes animate4 {
-    0% {
-        @include animatePos(30, 15, 15, 20);
-    }
-    10% {
-        @include animatePos(35, 15, 14, 20);
-    }
-    17% {
-        @include animatePos(30, 15, 15, 20);
-    }
-    66% {
-        @include animatePos(7, 17, 20, 20);
-    }
-}
-
-@keyframes animate5 {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 @keyframes animate6 {
     25% {
         @include animatePos(21, 12, 14, 26);
