@@ -230,7 +230,7 @@ ul {
   left: 15px;
   width: 20px;
   height: 20px;
-  background: #f77167;
+  background: #45B4D9;
   animation: animate3 1s infinite;
 }
 
@@ -240,7 +240,7 @@ ul {
   left: 15px;
   height: 20px;
   width: 20px;
-  background: #45B4D9;
+  background: #f77167;
   animation: animate6 1s linear infinite;
 }
 

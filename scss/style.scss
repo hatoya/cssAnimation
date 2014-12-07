@@ -84,7 +84,7 @@ ul{
         left: 15px;
         width: 20px;
         height: 20px;
-        background: nth($color, 4);
+        background: nth($color, 3);
         animation: animate3 1s infinite;
     }
 }
@@ -94,7 +94,7 @@ ul{
         @include positionType(absolute, 15px, 15px);
         height: 20px;
         width: 20px;
-        background: nth($color, 3);
+        background: nth($color, 4);
         animation: animate6 1s linear infinite;
     }
 }
