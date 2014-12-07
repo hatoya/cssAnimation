@@ -15,13 +15,19 @@ ul{
 
 .content{
     width: 320px;
-    min-height: 800px;
-    margin: 50px auto;
+    margin: 0 auto;
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
     & > div{
         position: relative;
         height: 50px;
         width: 50px;
-        margin: 20px auto 0 auto;
+        margin-top: 12px;
+        margin-left: 12px;
+        float: left;
     }
 }
 
@@ -48,7 +54,7 @@ ul{
         position: absolute;
         top: 25px;
         height: 5px;
-        width: 5px;
+        width: 6px;
         margin-left: 2px;
         background: nth($color, 2);
         float: left;
@@ -66,7 +72,7 @@ ul{
     }
     @for $i from 0 through 9{
         div:nth-child(#{$i+1}){
-            left: ($i * 7) - 10px;
+            left: #{$i * 7px - 1px};
         }
     }
 }

@@ -142,14 +142,20 @@ ul {
 
 .content {
   width: 320px;
-  min-height: 800px;
-  margin: 50px auto;
+  margin: 0 auto;
+}
+.content:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .content > div {
   position: relative;
   height: 50px;
   width: 50px;
-  margin: 20px auto 0 auto;
+  margin-top: 12px;
+  margin-left: 12px;
+  float: left;
 }
 
 .loading1 div {
@@ -172,7 +178,7 @@ ul {
   position: absolute;
   top: 25px;
   height: 5px;
-  width: 5px;
+  width: 6px;
   margin-left: 2px;
   background: #8bc626;
   float: left;
@@ -188,34 +194,34 @@ ul {
   animation-delay: .75s;
 }
 .loading2 div:nth-child(1) {
-  left: -10px;
+  left: -1px;
 }
 .loading2 div:nth-child(2) {
-  left: -3px;
+  left: 6px;
 }
 .loading2 div:nth-child(3) {
-  left: 4px;
+  left: 13px;
 }
 .loading2 div:nth-child(4) {
-  left: 11px;
+  left: 20px;
 }
 .loading2 div:nth-child(5) {
-  left: 18px;
+  left: 27px;
 }
 .loading2 div:nth-child(6) {
-  left: 25px;
+  left: 34px;
 }
 .loading2 div:nth-child(7) {
-  left: 32px;
+  left: 41px;
 }
 .loading2 div:nth-child(8) {
-  left: 39px;
+  left: 48px;
 }
 .loading2 div:nth-child(9) {
-  left: 46px;
+  left: 55px;
 }
 .loading2 div:nth-child(10) {
-  left: 53px;
+  left: 62px;
 }
 
 .loading3 div {
