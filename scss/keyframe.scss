@@ -81,10 +81,11 @@
 
 @keyframes animate7 {
     60% {
+        @include animatePos(-1, -1, 50, 50);
         opacity: 0;
     }
-    100% {
-        @include animatePos(-26, -26, 100, 100);
+    95% {
+        @include animatePos(24, 24, 0, 0);
         opacity: 0;
     }
 }

@@ -58,7 +58,7 @@ ul{
         margin-left: 2px;
         background: nth($color, 2);
         float: left;
-        animation: animate2 1s infinite;
+        animation: animate2 1s linear infinite;
         &:nth-child(4n+2){
             animation-delay: .25s;
         }

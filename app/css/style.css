@@ -105,13 +105,17 @@
 }
 @keyframes animate7 {
   60% {
+    top: -1px;
+    left: -1px;
+    width: 50px;
+    height: 50px;
     opacity: 0;
   }
-  100% {
-    top: -26px;
-    left: -26px;
-    width: 100px;
-    height: 100px;
+  95% {
+    top: 24px;
+    left: 24px;
+    width: 0px;
+    height: 0px;
     opacity: 0;
   }
 }
@@ -182,7 +186,7 @@ ul {
   margin-left: 2px;
   background: #8bc626;
   float: left;
-  animation: animate2 1s infinite;
+  animation: animate2 1s linear infinite;
 }
 .loading2 div:nth-child(4n+2) {
   animation-delay: .25s;
