@@ -36,7 +36,7 @@
     }
 }
 
-@keyframes animate6 {
+@keyframes animate4 {
     25% {
         @include animatePos(21, 12, 14, 26);
     }
@@ -58,7 +58,7 @@
     }
 }
 
-@keyframes animate7 {
+@keyframes animate5 {
     40% {
         @include animatePos(14, 19, 12, 12);
     }
@@ -70,7 +70,7 @@
     }
 }
 
-@keyframes animate8 {
+@keyframes animate6 {
     10% {
         transform: scale(1);
     }
@@ -79,7 +79,7 @@
     }
 }
 
-@keyframes animate9 {
+@keyframes animate7 {
     60% {
         opacity: 0;
     }
@@ -89,19 +89,19 @@
     }
 }
 
-@keyframes animate10 {
+@keyframes animate8 {
     100% {
         transform: rotate(360deg);
     }
 }
 
-@keyframes animate111 {
+@keyframes animate9-1 {
     100% {
         transform: rotate(90deg);
     }
 }
 
-@keyframes animate11 {
+@keyframes animate9-2 {
     50% {
         transform: scale(.2);
     }

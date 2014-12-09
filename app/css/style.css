@@ -42,7 +42,7 @@
     transform: rotate(180deg);
   }
 }
-@keyframes animate6 {
+@keyframes animate4 {
   25% {
     top: 21px;
     left: 12px;
@@ -75,7 +75,7 @@
     transform: rotate(180deg);
   }
 }
-@keyframes animate7 {
+@keyframes animate5 {
   40% {
     top: 14px;
     left: 19px;
@@ -95,7 +95,7 @@
     height: 12px;
   }
 }
-@keyframes animate8 {
+@keyframes animate6 {
   10% {
     transform: scale(1);
   }
@@ -103,7 +103,7 @@
     transform: scale(0.5);
   }
 }
-@keyframes animate9 {
+@keyframes animate7 {
   60% {
     opacity: 0;
   }
@@ -115,17 +115,17 @@
     opacity: 0;
   }
 }
-@keyframes animate10 {
+@keyframes animate8 {
   100% {
     transform: rotate(360deg);
   }
 }
-@keyframes animate111 {
+@keyframes animate9-1 {
   100% {
     transform: rotate(90deg);
   }
 }
-@keyframes animate11 {
+@keyframes animate9-2 {
   50% {
     transform: scale(0.2);
   }
@@ -234,24 +234,24 @@ ul {
   animation: animate3 1s infinite;
 }
 
-.loading6 div {
+.loading4 div {
   position: absolute;
   top: 15px;
   left: 15px;
   height: 20px;
   width: 20px;
   background: #f77167;
-  animation: animate6 1s linear infinite;
+  animation: animate4 1s linear infinite;
 }
 
-.loading7 div {
+.loading5 div {
   position: absolute;
   top: 0;
   left: 0;
   height: 50px;
   width: 50px;
 }
-.loading7 div:after {
+.loading5 div:after {
   content: "";
   position: absolute;
   top: 0px;
@@ -260,32 +260,32 @@ ul {
   width: 12px;
   border-radius: 50%;
   background: #e68616;
-  animation: animate7 1s linear infinite;
+  animation: animate5 1s linear infinite;
 }
-.loading7 div:nth-child(2n):after {
+.loading5 div:nth-child(2n):after {
   animation-delay: .5s;
 }
-.loading7 div:nth-child(1) {
+.loading5 div:nth-child(1) {
   transform: rotate(45deg);
 }
-.loading7 div:nth-child(2) {
+.loading5 div:nth-child(2) {
   transform: rotate(135deg);
 }
-.loading7 div:nth-child(3) {
+.loading5 div:nth-child(3) {
   transform: rotate(225deg);
 }
-.loading7 div:nth-child(4) {
+.loading5 div:nth-child(4) {
   transform: rotate(315deg);
 }
 
-.loading8 div {
+.loading6 div {
   position: absolute;
   top: 0;
   left: 0;
   height: 50px;
   width: 50px;
 }
-.loading8 div:after {
+.loading6 div:after {
   content: "";
   position: absolute;
   top: 5px;
@@ -295,58 +295,58 @@ ul {
   border-radius: 50%;
   background: #8bc626;
   transform: scale(0.5);
-  animation: animate8 2.4s linear infinite;
+  animation: animate6 2.4s linear infinite;
 }
-.loading8 div:nth-child(1) {
+.loading6 div:nth-child(1) {
   transform: rotate(0deg);
 }
-.loading8 div:nth-child(1):after {
+.loading6 div:nth-child(1):after {
   animation-delay: 0s;
 }
-.loading8 div:nth-child(2) {
+.loading6 div:nth-child(2) {
   transform: rotate(45deg);
 }
-.loading8 div:nth-child(2):after {
+.loading6 div:nth-child(2):after {
   animation-delay: 0.3s;
 }
-.loading8 div:nth-child(3) {
+.loading6 div:nth-child(3) {
   transform: rotate(90deg);
 }
-.loading8 div:nth-child(3):after {
+.loading6 div:nth-child(3):after {
   animation-delay: 0.6s;
 }
-.loading8 div:nth-child(4) {
+.loading6 div:nth-child(4) {
   transform: rotate(135deg);
 }
-.loading8 div:nth-child(4):after {
+.loading6 div:nth-child(4):after {
   animation-delay: 0.9s;
 }
-.loading8 div:nth-child(5) {
+.loading6 div:nth-child(5) {
   transform: rotate(180deg);
 }
-.loading8 div:nth-child(5):after {
+.loading6 div:nth-child(5):after {
   animation-delay: 1.2s;
 }
-.loading8 div:nth-child(6) {
+.loading6 div:nth-child(6) {
   transform: rotate(225deg);
 }
-.loading8 div:nth-child(6):after {
+.loading6 div:nth-child(6):after {
   animation-delay: 1.5s;
 }
-.loading8 div:nth-child(7) {
+.loading6 div:nth-child(7) {
   transform: rotate(270deg);
 }
-.loading8 div:nth-child(7):after {
+.loading6 div:nth-child(7):after {
   animation-delay: 1.8s;
 }
-.loading8 div:nth-child(8) {
+.loading6 div:nth-child(8) {
   transform: rotate(315deg);
 }
-.loading8 div:nth-child(8):after {
+.loading6 div:nth-child(8):after {
   animation-delay: 2.1s;
 }
 
-.loading9 div {
+.loading7 div {
   position: absolute;
   top: 24px;
   left: 24px;
@@ -354,24 +354,24 @@ ul {
   width: 0;
   border-radius: 50%;
   border: 2px solid #45B4D9;
-  animation: animate9 1.8s linear infinite;
+  animation: animate7 1.8s linear infinite;
 }
-.loading9 div:nth-child(1) {
+.loading7 div:nth-child(1) {
   animation-delay: 0s;
 }
-.loading9 div:nth-child(2) {
+.loading7 div:nth-child(2) {
   animation-delay: 0.3s;
 }
-.loading9 div:nth-child(3) {
+.loading7 div:nth-child(3) {
   animation-delay: 0.6s;
 }
 
-.loading10 > div {
+.loading8 > div {
   height: 50px;
   width: 50px;
-  animation: animate10 5s linear infinite;
+  animation: animate8 5s linear infinite;
 }
-.loading10 > div div {
+.loading8 > div div {
   position: absolute;
   top: 10px;
   left: 21px;
@@ -381,52 +381,52 @@ ul {
   border-radius: 50%;
   opacity: .5;
 }
-.loading10 > div div:nth-child(1) {
+.loading8 > div div:nth-child(1) {
   transform: rotate(0deg);
   transform-origin: bottom center;
 }
-.loading10 > div div:nth-child(2) {
+.loading8 > div div:nth-child(2) {
   transform: rotate(45deg);
   transform-origin: bottom center;
 }
-.loading10 > div div:nth-child(3) {
+.loading8 > div div:nth-child(3) {
   transform: rotate(90deg);
   transform-origin: bottom center;
 }
-.loading10 > div div:nth-child(4) {
+.loading8 > div div:nth-child(4) {
   transform: rotate(135deg);
   transform-origin: bottom center;
 }
-.loading10 > div div:nth-child(5) {
+.loading8 > div div:nth-child(5) {
   transform: rotate(180deg);
   transform-origin: bottom center;
 }
-.loading10 > div div:nth-child(6) {
+.loading8 > div div:nth-child(6) {
   transform: rotate(225deg);
   transform-origin: bottom center;
 }
-.loading10 > div div:nth-child(7) {
+.loading8 > div div:nth-child(7) {
   transform: rotate(270deg);
   transform-origin: bottom center;
 }
-.loading10 > div div:nth-child(8) {
+.loading8 > div div:nth-child(8) {
   transform: rotate(315deg);
   transform-origin: bottom center;
 }
 
-.loading11 > div {
+.loading9 > div {
   height: 50px;
   width: 50px;
-  animation: animate111 1.5s linear infinite;
+  animation: animate9-1 1.5s linear infinite;
 }
-.loading11 > div div {
+.loading9 > div div {
   position: absolute;
   top: 0;
   left: 0;
   height: 50px;
   width: 50px;
 }
-.loading11 > div div:after {
+.loading9 > div div:after {
   content: "";
   position: absolute;
   top: 7px;
@@ -435,18 +435,18 @@ ul {
   width: 12px;
   border-radius: 50%;
   background: #e68616;
-  animation: animate11 1.5s linear infinite;
+  animation: animate9-2 1.5s linear infinite;
 }
-.loading11 > div div:nth-child(1) {
+.loading9 > div div:nth-child(1) {
   transform: rotate(0deg);
 }
-.loading11 > div div:nth-child(2) {
+.loading9 > div div:nth-child(2) {
   transform: rotate(90deg);
 }
-.loading11 > div div:nth-child(3) {
+.loading9 > div div:nth-child(3) {
   transform: rotate(180deg);
 }
-.loading11 > div div:nth-child(4) {
+.loading9 > div div:nth-child(4) {
   transform: rotate(270deg);
 }
 
