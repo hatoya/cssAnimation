@@ -216,3 +216,17 @@ ul{
         }
     }
 }
+
+.loading10 {
+    div {
+        @include positionType(absolute, 50px, 0);
+        height: 10px;
+        width: 6px;
+        background: nth($color, 2);
+    }
+    @for $i from 0 through 8{
+        div:nth-child(#{$i+1}){
+            left: #{$i * 7px + 1};
+        }
+    }
+}
