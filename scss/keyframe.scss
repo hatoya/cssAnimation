@@ -108,6 +108,9 @@
     }
 }
 
-@kyeframes animate10 {
-
+@keyframes animate10 {
+    50% {
+        top: 0;
+        height: 50px;
+    }
 }
